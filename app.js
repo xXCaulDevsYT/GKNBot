@@ -1,4 +1,4 @@
-//FUCK OFF WOLFIE
+//CODE BY EMERALDASSASINYT
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
@@ -7,19 +7,19 @@ client.on("ready", () => {
 
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
 
-  client.user.setActivity(`GalacticKraft`);
+  client.user.setActivity(`Minecraft Windows 10 Edition`);
 });
 
 client.on("guildCreate", guild => {
 
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-  client.user.setActivity(`GalacticKraft`);
+  client.user.setActivity(`Minecraft Android Edition`);
 });
 
 client.on("guildDelete", guild => {
 
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-  client.user.setActivity(`GalacticKraft`);
+  client.user.setActivity(`Minecraft Poopy Edition`);
 });
 
 
@@ -65,18 +65,18 @@ client.on("message", async message => {
   }
 
   if(command === "serverip") {
-  message.channel.send('galactickraft.us.to | Coming Soon')
+  message.channel.send('DiviniumMC.tk 19132 |( Coming Soon )')
   }
 
-  if(command === "ip") {
-  message.channel.send('galactickraft.us.to | Coming Soon')
+  if(command === "hack-me") {
+  message.channel.send('You have succesfully been hacked sending info to bot owner')
   }
 
   if(command === "rules") {
     message.channel.send({embed: {
     color: 3447003,
     author: {
-      name: 'GalacticKraft Network Rules:',
+      name: 'DiviniumMC Network Rules:',
       icon_url: client.user.avatarURL
     },
     fields: [{
@@ -95,7 +95,7 @@ client.on("message", async message => {
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: "GalacticKraft Network",
+      text: "DiviniumMC Network",
     }
   }
 });
@@ -125,8 +125,8 @@ client.on("message", async message => {
         value: "Posts the server IP address."
       },
       {
-        name: "ip",
-        value: "Posts the server IP address."
+        name: "hack-me",
+        value: "hacks yourself."
       },
       {
         name: "rules",
@@ -144,7 +144,7 @@ client.on("message", async message => {
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: "GalacticKraft Network",
+      text: "DiviniumMC Network",
     }
   }
 });
